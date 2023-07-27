@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+     <h1>Imagem dinámica </h1>
+     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+     
+    <picture>
+
+         <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"> <!--FOTO TAMANHO P-->
+
+         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--FOTO TAMANHO M-->
+
+         <img src="imagens/foto-g.png" alt="Imagem flexivel"> <!-- A FOTO BASE É A FOTO PADRAO -->
+
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio no html5</p>
+    
+    <audio preload="metadata" controls > <!--TAG UTILIZADA PARA MAIS DE UM FORMATO DE AUDIO, SENDO ELE MP3,OGG,WAV-->
+        <source src="midia/Old World Saga - Hanu Dixit.mp3" type="audio/mpeg"> <!--AUDIO (MPEG) SIGNIFICA MP3 -->
+        <source src="midia/Old World Saga - Hanu Dixit.ogg" type="audio/ogg">
+        <source src="midia/Old World Saga - Hanu Dixit.wav" type="audio/wav"> <!--NAO USA WAV QUE É PESADO-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/Old World Saga - Hanu Dixit.mp3"> Clique aqui para baixar o arquivo em mp3</a> </p>
+    </audio> 
+
+     
+</body>
+</html>

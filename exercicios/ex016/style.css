@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Neuton:wght@300&family=Work+Sans:ital,wght@0,400;0,500;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*-height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #F2E8DF, #F2C6C2 );
+}
+
+main {
+    background-color: white;
+    border-radius: 10px; /*BORDAS ARREDONDADAS*/
+    box-shadow: 5px 5px 15px #9c807ec0; /*SOMBREAR BORAS*/
+    width: 600px; 
+    padding: 10px; /*EMCORPORAR MAIS O TEXTO*/
+    margin: auto; /*CENTRALIZAR A MARGNEM DO TEXTO NO MEIO*/
+}
+
+h1 {
+     font-family:'Kaushan Script', cursive; 
+     color: #F28585;
+     text-align: center;
+     text-shadow: 1px 1px 2px #9c807edc;
+}
+
+h2 {
+    color: rgb(51, 51, 173);
+}
+
+p {
+    font-family: 'Caveat', cursive;
+    text-align: justify;
+    font-size: 1em;
+}
