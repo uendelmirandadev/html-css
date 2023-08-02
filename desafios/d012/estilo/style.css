@@ -71,8 +71,8 @@ section.imagem {
     background-color: rgba(0, 0, 0, 0.301);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.301);
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover; /*A IMAGEM FICA INTEIRA NA TELA*/
+    background-attachment: fixed; /*EFEITO PARALAX */
 
 }
 
