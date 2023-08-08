@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.csexo { 
+            background-color: bisque;
+        }
+
+        col.cidade{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+
+        <colgroup> <!--Colunas de grupo -->
+            <col class="cnome"> <!--Toda a Coluna cor verde - chatreuse -->
+            <col class="csexo"> <!--Toda a Coluna Cor bege -->
+            <col class="cidade"> <!--Toda a Coluna Cor Vinho -->
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+     
+           <tr>
+            <th scope="colgroup">Nome</th>
+            <th scope="colgroup">Sexo</th>
+            <th scope="colgroup">Idade</th>
+            <th scope="colgroup">Profissão</th>
+           </tr>
+
+           <tr>
+             <td>Ana Maria</td>
+             <td>F</td>
+             <td>25</td>
+             <td>Jornalista</td>
+           </tr>
+
+           <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+          </tr>
+
+          <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+          </tr>
+
+          <tr>
+            <td>Helio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+          </tr>
+
+          <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+          </tr>
+
+          <tr>
+            <td>Ótavio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+          </tr>
+
+     
+     
+    
+    </table>
+    
+</body>
+</html>
