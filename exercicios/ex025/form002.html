@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Teste de formulário</h1>
+     <form action="cadastro.php" method="post"> <!--Post = Senha um pouco mais segura / Get = senha sem proteção nenhuma--> 
+
+        <!--
+            ATRIBUTOS:
+            required = requer q seja preenchido o campo do formulario
+            minlegenth = requer minimo de caracteres
+            maxlegenth = requer maximo de caracteres
+            size = tamanho da caixa de formulario
+            placehelder = texto dentro do formulario informando oq deve ser preenchido
+            autocomente username = aparece sujestao pra vc por no nome
+            autocomplete Current Password = aparece sujestao de senha ja usada no navegador
+        -->
+
+        <!--Inputs:
+        input text = Inserir Texto
+        input password = Inserir senha ( o bloco protege as senhas com **)
+        input submit = Submeter 
+        input reset = Limpar todo o formulario
+        -->
+
+       <p> 
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="minimo 5 letras" autocomplete="username">
+       </p>
+
+       <p>
+         <label for="isen">Senha:</label>
+         <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="10" placeholder="minimo 8 letras" autocomplete="current-password">
+
+       </p>
+
+       <p>
+        <input type="submit" value="Enviar"> <!--Botao de enviar formulario-->
+        <input type="reset" value="Limpar"> <!--Botao de resetar informações do formulario-->
+       </p>
+
+     </form>
+</body>
+</html>
